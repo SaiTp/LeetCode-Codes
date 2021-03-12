@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/2/2021 at 18:19)](https://leetcode.com/problems/ransom-note/discuss/1106010/c%2B%2B-solution-faster-than-99)  
 <h2>383. Ransom Note</h2><h3>Easy</h3><hr><div><p>Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.</p>
 
 <p>Each letter in the magazine string can only be used once in your ransom note.</p>

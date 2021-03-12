@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/2/2021 at 18:3)](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/discuss/1105998/Faster-than-100-c%2B%2B-solution)  
 <h2>1523. Count Odd Numbers in an Interval Range</h2><h3>Easy</h3><hr><div><p>Given two non-negative integers <code>low</code> and <code><font face="monospace">high</font></code>. Return the <em>count of odd numbers between </em><code>low</code><em> and </em><code><font face="monospace">high</font></code><em>&nbsp;(inclusive)</em>.</p>
 
 <p>&nbsp;</p>

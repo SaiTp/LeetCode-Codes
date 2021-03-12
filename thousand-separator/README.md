@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/2/2021 at 17:28)](https://leetcode.com/problems/thousand-separator/discuss/1105974/Easy-C%2B%2B-solution-faster-than-100)  
 <h2>1556. Thousand Separator</h2><h3>Easy</h3><hr><div><p>Given an&nbsp;integer <code>n</code>, add a dot (".")&nbsp;as the thousands separator and return it in&nbsp;string format.</p>
 
 <p>&nbsp;</p>

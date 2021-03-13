@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/2/2021 at 11:23)](https://leetcode.com/problems/third-maximum-number/discuss/1107042/C%2B%2B-Solution)  
 <h2>414. Third Maximum Number</h2><h3>Easy</h3><hr><div><p>Given integer array <code>nums</code>, return <em>the third maximum number in this array</em>. If the third maximum does not exist, return the maximum number.</p>
 
 <p>&nbsp;</p>

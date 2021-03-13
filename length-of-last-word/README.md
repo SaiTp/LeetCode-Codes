@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/2/2021 at 11:55)](https://leetcode.com/problems/length-of-last-word/discuss/1107081/C%2B%2B-Simple-solution-faster-than-100)  
 <h2>58. Length of Last Word</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code> consists of some words separated by spaces, return <em>the length of the last word&nbsp;in the string. If the last word does not exist, return </em><code>0</code>.</p>
 
 <p>A <strong>word</strong> is a maximal substring consisting&nbsp;of non-space characters only.</p>

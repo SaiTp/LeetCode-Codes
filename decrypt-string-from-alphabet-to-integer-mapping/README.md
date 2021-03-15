@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/2/2021 at 19:7)](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/discuss/1110814/C%2B%2B-Simple-Solution-or-Faster-than-100)  
 <h2>1309. Decrypt String from Alphabet to Integer Mapping</h2><h3>Easy</h3><hr><div><p>Given a string <code>s</code> formed by digits (<code>'0'</code> - <code>'9'</code>)&nbsp;and <code>'#'</code>&nbsp;.&nbsp;We want to map <code>s</code> to English lowercase characters as follows:</p>
 
 <ul>

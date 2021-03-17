@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/2/2021 at 15:59)](https://leetcode.com/problems/count-largest-group/discuss/1113778/C%2B%2B-or-Simple-Solution-or-Faster-than-100)  
 <h2>1399. Count Largest Group</h2><h3>Easy</h3><hr><div><p>Given an integer&nbsp;<code>n</code>.&nbsp;Each number from <code>1</code> to <code>n</code> is grouped according to the sum of its digits.&nbsp;</p>
 
 <p>Return&nbsp;how many groups have the largest size.</p>

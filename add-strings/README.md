@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/2/2021 at 22:49)](https://leetcode.com/problems/add-strings/discuss/1115830/C%2B%2B-or-Faster-than-100)  
 <h2>415. Add Strings</h2><h3>Easy</h3><hr><div><p>Given two non-negative integers <code>num1</code> and <code>num2</code> represented as string, return the sum of <code>num1</code> and <code>num2</code>.</p>
 
 <p><b>Note:</b>

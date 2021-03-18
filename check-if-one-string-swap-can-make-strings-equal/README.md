@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/2/2021 at 19:35)](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/discuss/1115602/C%2B%2B-Solution-or-100-faster-or-less-than-100-memory)  
 <h2>1790. Check if One String Swap Can Make Strings Equal</h2><h3>Easy</h3><hr><div><p>You are given two strings <code>s1</code> and <code>s2</code> of equal length. A <strong>string swap</strong> is an operation where you choose two indices in a string (not necessarily different) and swap the characters at these indices.</p>
 
 <p>Return <code>true</code> <em>if it is possible to make both strings equal by performing <strong>at most one string swap </strong>on <strong>exactly one</strong> of the strings. </em>Otherwise, return <code>false</code>.</p>

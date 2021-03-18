@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/2/2021 at 18:47)](https://leetcode.com/problems/the-kth-factor-of-n/discuss/1115555/Simple-C%2B%2B-solution-or-Faster-than-100)  
 <h2>1492. The kth Factor of n</h2><h3>Medium</h3><hr><div><p>Given two positive integers <code>n</code> and <code>k</code>.</p>
 
 <p>A factor of an integer <code>n</code> is defined as an integer <code>i</code> where <code>n % i == 0</code>.</p>

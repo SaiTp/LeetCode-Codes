@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/2/2021 at 7:45)](https://leetcode.com/problems/number-of-substrings-with-only-1s/discuss/1127642/Simple-C%2B%2B-Solution-Faster-than-98)  
 <h2>1513. Number of Substrings With Only 1s</h2><h3>Medium</h3><hr><div><p>Given a binary string&nbsp;<code>s</code>&nbsp;(a string consisting only of '0' and '1's).</p>
 
 <p>Return the number of substrings with all characters 1's.</p>

@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/3/2021 at 16:16)](https://leetcode.com/problems/summary-ranges/discuss/1164800/C%2B%2B-Solution-or-Faster-than-100)  
 <h2>228. Summary Ranges</h2><h3>Easy</h3><hr><div><p>You are given a <strong>sorted unique</strong> integer array <code>nums</code>.</p>
 
 <p>Return <em>the <strong>smallest sorted</strong> list of ranges that <strong>cover all the numbers in the array exactly</strong></em>. That is, each element of <code>nums</code> is covered by exactly one of the ranges, and there is no integer <code>x</code> such that <code>x</code> is in one of the ranges but not in <code>nums</code>.</p>

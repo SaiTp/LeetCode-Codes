@@ -14,11 +14,13 @@ class Solution{
     //with O(1) extra space.
     void arrange(long long arr[], int n) {
         // Your code here
-        int a[n];
+         for(int i=0;i<n;i++)
+        {
+          int X=arr[arr[i]]%n;
+          arr[i]=arr[i]+X*n;
+       }
         for(int i=0;i<n;i++)
-        a[i]=arr[arr[i]];
-        for(int i=0;i<n;i++)
-        arr[i]=a[i];
+        arr[i]/=n;
     }
 };
 

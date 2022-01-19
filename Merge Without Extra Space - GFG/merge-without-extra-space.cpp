@@ -8,15 +8,19 @@ class Solution{
 public:
 	void merge(int arr1[], int arr2[], int n, int m) {
 	    // code here
-	    vector<int>a(arr1,arr1+n);
-	    for(int i=0;i<m;i++)
-	    a.push_back(arr2[i]);
-	    sort(a.begin(),a.end());
-	    for(int i=0;i<n;i++)
-	    arr1[i]=a[i];
-	    int k=0;
-	    for(int i=n;i<a.size();i++)
-	    arr2[k++]=a[i];
+	       int i = n - 1, j = 0;
+   while( i >= 0 && j < m){
+       if(arr1[i] > arr2[j]){
+           int x = arr1[i];
+           arr1[i] = arr2[j];
+           arr2[j] = x;
+       }
+       
+       i--;
+       j++;
+   }
+   sort(arr1, arr1 +n);
+   sort(arr2, arr2 + m);
 	}
 };
 

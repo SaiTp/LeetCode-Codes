@@ -13,31 +13,21 @@ class Solution{
     int findLongestConseqSubseq(int arr[], int n)
     {
       //Your code here
-      int ans=1,j=0;
-      sort(arr,arr+n);
-      for(int i=1;i<n;i++)
-      {
-          if(arr[j]!=arr[i])
-          {
-              j++;
-          arr[j]=arr[i];
-          }
-      }
-      n=j+1;
-      //for(int i=0;i<n;i++)
-      //cout<<arr[i]<<" ";
-      int c=1;
-      for(int i=0;i<n-1;i++)
-      {
-          if(arr[i]+1==arr[i+1])
-          {
-          c++;
-          ans=max(ans,c);
-          }
-          else
-          c=1;
-      }
-      return ans;
+       unordered_set<int> h(arr,arr+n);
+       
+       int count=0,res=0;
+        for(auto x:h)
+        {
+            if(h.find(x-1)==h.end())
+        {
+            int curr=1;
+            while(h.find(x+curr)!=h.end())
+              curr++;
+              
+           res = max(res,curr);
+        }
+    }
+       return res;
     }
 };
 

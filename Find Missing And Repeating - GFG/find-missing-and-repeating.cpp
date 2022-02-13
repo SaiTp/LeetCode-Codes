@@ -8,23 +8,26 @@ class Solution{
 public:
     int *findTwoElement(int *arr, int n) {
         // code here
-        map<int,int>mp;
-        for(int i=1;i<=n;i++)
-        mp[i]=0;
+        int a,b;
         for(int i=0;i<n;i++)
-        mp[arr[i]]++;
-        int a=0,b=0;
-        for(auto i :mp)
         {
-        if(i.second==2)
-        b=i.first;
-        if(i.second==0)
-        a=i.first;
+            if(arr[abs(arr[i])-1]<0)
+            a=abs(arr[i]);
+            else
+            arr[abs(arr[i])-1]=-arr[abs(arr[i])-1];
         }
-        int* ar = (int*) malloc(2*sizeof(int));
-        ar[0]=b;
-        ar[1]=a;
-        return ar;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>0)
+            {
+            b=i+1;
+                break;
+            }
+        }
+        int *res=new int[2];
+        res[0]=a;
+        res[1]=b;
+        return res;
     }
 };
 

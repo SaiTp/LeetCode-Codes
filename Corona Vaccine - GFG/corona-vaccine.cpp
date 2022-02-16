@@ -98,32 +98,19 @@ struct Node
 */
 class Solution{
 public:
-    unordered_map<Node*,bool>mp;
    int ans=0;
    
-   void solve(Node*root,Node*prev){
-       if(!root)return;
-       solve(root->left,root);
-       solve(root->right,root);
-       
-       if((prev==NULL && mp.find(root)==mp.end()) 
-       || mp.find(root->left)==mp.end() || 
-       mp.find(root->right)==mp.end()){
-           mp[root->left]=true;
-           mp[root->right]=true;
-           mp[root]=true;
-           mp[prev]=true;
-           ans++;
-           return;
-       }
-       
-   }
+   int dfs(Node* node) {
+        if (!node) return 0;
+        int val = dfs(node->left) + dfs(node->right);
+        if (val == 0) return 3;
+        if (val < 3) return 0;
+        ans++;
+        return 1;
+    }
    
    int supplyVaccine(Node* root){
-       if(!root)return 0;
-       mp[NULL]=true;
-       solve(root,NULL);
-       return ans;
+       return dfs(root) > 2 ? ans + 1 : ans;
    }
 };
 

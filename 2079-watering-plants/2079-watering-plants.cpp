@@ -1,22 +1,16 @@
 class Solution {
 public:
-    int wateringPlants(vector<int>& plants, int capacity) {
-        int count = 0;
-        int i = 0;
-        int x = capacity;
-        while(i < plants.size()) {
-            if(capacity >= plants[i]) {
-                count++;
-                capacity -= plants[i];
-                i++;
-            } else {
-                count += 2*i;
-                if(capacity == 0)
-                    capacity = x;
-                else
-                    capacity += (x - capacity);
+    int wateringPlants(vector<int>& plants, int cap) {
+       int a=cap;
+        int steps=0;
+        for(int i=0;i<plants.size();i++){
+            cap=cap-plants[i];
+            steps++;
+            if(cap<0){
+                cap=a-plants[i];
+                steps+=i*2;
             }
         }
-        return count;
+        return steps;
     }
 };

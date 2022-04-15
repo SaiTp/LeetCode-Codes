@@ -6,11 +6,10 @@ using namespace std;
 
  // } Driver Code Ends
 //User function Template for C++
-long long int dp[505];
 
 class Solution {
 public:
-    
+long long int dp[505];
     long long int solver(int ind, int k, vector<int> &arr, int pre){
         int n = arr.size(); 
         if(ind==n) return (-1 * pre);
@@ -34,7 +33,7 @@ public:
         
         memset(dp, -1, sizeof(dp));
         return solver(0, k,nums,0);
-    } 
+    }  
 };
 
 // { Driver Code Starts.

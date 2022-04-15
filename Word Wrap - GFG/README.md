@@ -1,5 +1,5 @@
 # Word Wrap
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><div class="row bottom">
 <div class="col-xs-12 textAlign">
@@ -57,7 +57,7 @@ You don't need to read or print anyhting. Your task is to complete the function&
 <p><span style="font-size:18px"><strong>Constraints:</strong><br>
 1 ≤ n ≤ 500<br>
 1 ≤ nums[i] ≤ 1000<br>
-max(nums[i]) ≤ k ≤ 1500</span></p>
+max(nums[i]) ≤ k ≤ 2000</span></p>
 </div>
 </div>
 </div>

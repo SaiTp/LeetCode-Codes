@@ -12,15 +12,15 @@ class Solution {
         // code here
         unordered_map<int,int>mx;
         unordered_map<int,int>my;
-        unordered_map<string,int>mxy;
+        map<pair<int,int>,int>mxy;
         int ans=0;
         for(int i=0;i<N;i++)
         {
-            string t=to_string(X[i])+","+to_string(Y[i]);
-            ans+=mx[X[i]]+my[Y[i]]-2*mxy[t];
+            // string t=to_string(X[i])+","+to_string(Y[i]);
+            ans+=mx[X[i]]+my[Y[i]]-2*mxy[{X[i],Y[i]}];
             mx[X[i]]++;
             my[Y[i]]++;
-            mxy[t]++;
+            mxy[{X[i],Y[i]}]++;
         }
         return ans;
     }

@@ -1,5 +1,5 @@
 # Smallest distinct window
-##  Medium 
+## Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a string '<strong>s</strong>'. The task is to find the <strong>smallest </strong>window length&nbsp;that contains all the characters of the given string at least one time.<br>
 For eg. A = <strong>aabcbcdbca</strong>, then the result would be 4 as of the smallest window will be <strong>dbca</strong>.</span></p>

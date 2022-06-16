@@ -9,48 +9,29 @@ class Solution{
     int findSubString(string str)
     {
         // Your code goes here 
-         int n= str.length();
-       
-       unordered_map < char, int > m;
-       int i=0, j=0, maxx= INT_MAX;
-       string res;
-       
-       for (int i=0; i< n; i++){
- // only those elements appear only one time.       
-             m[str[i]]= 0; 
-   
-       }
-       int cnt=0;
-       while (i< n){
-           
-           if (m[str[i]] == 0)
-              cnt ++;
-     // expand the window the increase by 1.         
-            m[str[i]]+= 1; 
-           
-            
-            if (cnt == m.size()){
-                
-        while (j < n and m[str[j]] > 1){
-    
-// shrink the window because duplicate elements                    
-                      m[str[j]]--; 
-                     
-                      j++;
-                 }
-                 
-                 if (maxx > (i-j+1)){
-                     
-                   maxx= i-j+1;
-              res= str.substr (j, i-j+1);
-                 }
-                 
-                 
-            }
-            i++;
-       }
-       
-         return res.size();
+         set<char>s;
+         for(int i=0;i<str.size();i++)
+         s.insert(str[i]);
+         
+         int n=s.size();
+         int i=0,j=0,ans=str.size();
+         unordered_map<int,int>mp;
+         
+         while(i<str.size())
+         {
+             mp[str[i]]++;
+             if(mp.size()==n)
+             {
+               while(mp[str[j]]>1)
+               {
+                   mp[str[j]]--;
+                   j++;
+               }
+               ans=min(ans,i-j+1);
+             }
+             i++;
+         }
+         return ans;
     }
 };
 

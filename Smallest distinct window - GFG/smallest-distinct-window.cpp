@@ -6,10 +6,10 @@ using namespace std;
  // } Driver Code Ends
 class Solution{
     public:
-    string findSubString(string str)
+    int findSubString(string str)
     {
         // Your code goes here 
-       int n= str.length();
+         int n= str.length();
        
        unordered_map < char, int > m;
        int i=0, j=0, maxx= INT_MAX;
@@ -50,7 +50,7 @@ class Solution{
             i++;
        }
        
-         return res;
+         return res.size();
     }
 };
 
@@ -64,7 +64,7 @@ int main() {
         string str;
         cin >> str;
         Solution ob;
-        cout << ob.findSubString(str).size() << endl;
+        cout << ob.findSubString(str) << endl;
     }
     return 0;
 }  // } Driver Code Ends

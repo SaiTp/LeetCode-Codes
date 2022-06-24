@@ -11,14 +11,14 @@ class Solution{
 public:
     char profession(int level, int pos){
         // code here
-         bool isOpposite = false;
-        while(pos != 1){
-            if(pos % 2 == 0){
-                isOpposite = !isOpposite; 
-            }
-            pos = (pos + 1)/2;
-        }
-        return isOpposite ? 'd' : 'e';
+        int c=0;
+        pos--;
+         while(pos)
+         {
+             pos &= (pos-1) ;
+             c++;
+         }
+         return c%2 ? 'd' : 'e';
     }
 };
 

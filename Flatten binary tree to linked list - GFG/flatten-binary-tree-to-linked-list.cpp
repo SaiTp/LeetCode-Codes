@@ -107,12 +107,12 @@ class Solution
         {
             return;
         }
-        
+         
         flatten(root->right);
-        flatten(root->left);
-        
+       
+         flatten(root->left); 
         root->right = prev;
-        root->left = NULL;
+      root->left = NULL;
         
         prev = root;
     }

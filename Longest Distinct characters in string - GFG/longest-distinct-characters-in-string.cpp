@@ -36,7 +36,7 @@ int longestSubstrDistinctChars (string S)
         {
             while(mp[S[i]]!=1)
             {
-                ans=max(ans,i-j);
+               // ans=max(ans,i-j);
                 mp[S[j]]--;
                 j++;
                

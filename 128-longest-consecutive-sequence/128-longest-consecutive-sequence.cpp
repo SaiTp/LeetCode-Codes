@@ -6,16 +6,11 @@ public:
             return 0;
         if(n==1)
             return 1;
-        set<int>s(nums.begin(),nums.end());
-        vector<int>num(s.begin(),s.end());
-        sort(num.begin(),num.end());
-        n=num.size();
-        if(n==1)
-            return 1;
+        sort(nums.begin(),nums.end());
         for(int i=0;i<n-1;i++)
         {
-
-            if(num[i]+1==num[i+1])
+        if(nums[i]!=nums[i+1]){
+            if(nums[i]+1==nums[i+1])
                 c++;
             else
             {
@@ -23,6 +18,9 @@ public:
             }
             res=max(res,c);
         }
+        }
+        if(res==INT_MIN)
+            return 1;
         return res;
     }
 };

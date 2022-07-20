@@ -1,16 +1,13 @@
+int m[1000001];
 class Solution {
 public:
-    vector<int> arrayChange(vector<int>& nums, vector<vector<int>>& operations) {
-        unordered_map<int,int>mp;
-        int j=0;
-        for(auto i:nums)
-            mp[i]=j++;
-        for(auto i:operations)
-        {
-            int t=mp[i[0]];
-            nums[t]=i[1];
-            mp[i[1]]=t;
-        }
-        return nums;
+vector<int> arrayChange(vector<int>& nums, vector<vector<int>>& operations) {
+    for (int i = 0; i < nums.size(); ++i)
+        m[nums[i]] = i;
+    for (auto &op : operations) {
+        nums[m[op[0]]] = op[1];
+        m[op[1]] = m[op[0]];
     }
+    return nums;
+}
 };

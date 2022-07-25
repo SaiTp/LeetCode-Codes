@@ -1,27 +1,30 @@
 class Solution {
 public:
     vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
-        int s=rolls.size();
-        int sum=mean*(n+s);
-        for(auto i :rolls)
-            sum-=i;
-        if(sum>n*6)
-            return {};
-        if(sum<=0)
-            return {};
-        // cout<<sum;
-        if(sum<n)
-            return {};
-        vector<int>res(n);
-        int t=sum/n;
-        
-        for(int i=0;i<n;i++)
-        {
-            res[i]=t;
+       int m = rolls.size();
+        int desiredSum = mean*(n + m);
+        vector<int> ans(n, 0);
+        int currentSum = 0;
+        for(auto roll: rolls) {
+            currentSum += roll;
         }
-        t=sum%n;
-        for(int i=0;t-- && i<n;i++)
-            res[i]++;
-        return res;
+        int difference = desiredSum - currentSum;
+        if((6*n < difference) || (n > difference)) {
+            vector<int> myvector{};
+            return myvector;
+        }
+        difference -= n;
+        for(int i = 0; i< n; i++) {
+            if(difference > 5) {
+                ans[i] = 6;
+                difference -= 5;
+            } else if(difference > 0) {
+                ans[i] = 1 + difference;
+                difference = 0;
+            } else {
+                ans[i] = 1;
+            }
+        }
+        return ans;
     }
 };

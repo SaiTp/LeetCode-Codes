@@ -11,33 +11,32 @@
  */
 class Solution {
 public:
-    int sum=0;
-    void help(TreeNode* root)
-    {
-        if(!root)
-            return;
-        if(root->val %2==0 && (root->left || root->right))
-        {
-            if(root->left)
-            {
-                if(root->left->left)
-                    sum+=root->left->left->val;
-                if(root->left->right)
-                    sum+=root->left->right->val;
-            }
-            if(root->right)
-            {
-                if(root->right->left)
-                    sum+=root->right->left->val;
-                if(root->right->right)
-                    sum+=root->right->right->val;
-            }
-        }
-        help(root->left);
-        help(root->right);
-    }
     int sumEvenGrandparent(TreeNode* root) {
-        help(root);
-        return sum;
+
+        
+        return sumEvenGrandparent(root, false, false);
+        
+    }
+    
+    int sumEvenGrandparent(TreeNode* root, bool parent, bool grandParent) {
+        if(root == NULL)
+            return 0;
+        
+        bool current = false;
+        
+        if(root->val % 2 == 0)
+            current = true;
+        
+        int leftSum = sumEvenGrandparent(root->left, current, parent) ;
+        int rightSum = sumEvenGrandparent(root->right, current, parent);
+        
+        if(grandParent) {
+            return  leftSum + rightSum + root -> val;
+        }
+        else {
+            return  leftSum + rightSum;
+        }
+        
+        
     }
 };

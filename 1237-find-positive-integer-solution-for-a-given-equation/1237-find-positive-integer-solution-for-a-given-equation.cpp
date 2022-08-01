@@ -13,12 +13,17 @@
 class Solution {
 public:
     vector<vector<int>> findSolution(CustomFunction& customfunction, int z) {
-        vector<vector<int>>ans;
-        for(int i=1;i<=1000;i++)
-        {
-            for(int j=1;j<=1000;j++)
-                if(customfunction.f(i,j)==z)
-                    ans.push_back({i,j});
+        vector<vector<int>> ans;
+        int ymax = 1000;
+        for (int x=1; x<=1000; x++) {
+            int i = 1, j = ymax;
+            while (i < j) {
+                int y = (i + j) / 2;
+                int z1 = customfunction.f(x, y);
+                if (z1 == z) {ans.push_back({x, y}); ymax=y; break;}
+                else if (z1 < z) i = y + 1;
+                else j = y;
+            }
         }
         return ans;
     }

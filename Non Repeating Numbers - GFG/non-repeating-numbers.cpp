@@ -1,8 +1,8 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
 
- // } Driver Code Ends
+// } Driver Code Ends
 class Solution
 {
 public:
@@ -31,7 +31,9 @@ public:
     }
 };
 
-// { Driver Code Starts.
+
+
+//{ Driver Code Starts.
 int main(){
     int T;
     cin >> T;
@@ -49,4 +51,5 @@ int main(){
     	cout << "\n";
     }
 	return 0;
-}  // } Driver Code Ends
+}
+// } Driver Code Ends

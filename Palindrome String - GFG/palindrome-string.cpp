@@ -1,10 +1,10 @@
-// { Driver Code Starts
+//{ Driver Code Starts
  
 #include <bits/stdc++.h>
 using namespace std;
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 //User function template for C++
 class Solution{
 public:	
@@ -24,7 +24,9 @@ public:
 
 };
 
-// { Driver Code Starts.
+
+
+//{ Driver Code Starts.
 
 int main() 
 {
@@ -45,4 +47,5 @@ int main()
    	}
 
     return 0;
-}  // } Driver Code Ends
+}
+// } Driver Code Ends

@@ -1,9 +1,9 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
 
- // } Driver Code Ends
+// } Driver Code Ends
 class Solution
 {
     public:
@@ -24,7 +24,9 @@ class Solution
     }
 };
 
-// { Driver Code Starts.
+
+
+//{ Driver Code Starts.
 int main()
 {
     //taking total testcases
@@ -46,4 +48,5 @@ int main()
 	}
 	return 0;
 }
-  // } Driver Code Ends
+
+// } Driver Code Ends

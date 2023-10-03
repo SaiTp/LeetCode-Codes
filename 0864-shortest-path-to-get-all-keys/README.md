@@ -43,7 +43,8 @@
 	<li><code>m == grid.length</code></li>
 	<li><code>n == grid[i].length</code></li>
 	<li><code>1 &lt;= m, n &lt;= 30</code></li>
-	<li><code>grid[i][j]</code> is either an English letter, <code>'.'</code>, <code>'#'</code>, or <code>'@'</code>.</li>
+	<li><code>grid[i][j]</code> is either an English letter, <code>'.'</code>, <code>'#'</code>, or <code>'@'</code>.&nbsp;</li>
+	<li>There is exactly one&nbsp;<code>'@'</code>&nbsp;in the grid.</li>
 	<li>The number of keys in the grid is in the range <code>[1, 6]</code>.</li>
 	<li>Each key in the grid is <strong>unique</strong>.</li>
 	<li>Each key in the grid has a matching lock.</li>

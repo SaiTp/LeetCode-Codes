@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 //Initial Template for C++
 
 
@@ -85,7 +85,7 @@ Node* buildTree(string str) {
 }
 
 
- // } Driver Code Ends
+// } Driver Code Ends
 /* A binary tree node structure
 
 struct Node
@@ -125,7 +125,9 @@ class Solution{
 };
 
 
-// { Driver Code Starts.
+
+
+//{ Driver Code Starts.
 
 /* Driver program to test size function*/
 
@@ -146,4 +148,5 @@ int main() {
     }
     return 0;
 }
-  // } Driver Code Ends
+
+// } Driver Code Ends

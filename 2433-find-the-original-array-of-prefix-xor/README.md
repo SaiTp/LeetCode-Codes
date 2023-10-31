@@ -9,7 +9,7 @@
 <p>It can be proven that the answer is <strong>unique</strong>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre><strong>Input:</strong> pref = [5,2,0,3,1]
 <strong>Output:</strong> [5,7,2,3,2]
@@ -21,7 +21,7 @@
 - pref[4] = 5 ^ 7 ^ 2 ^ 3 ^ 2 = 1.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre><strong>Input:</strong> pref = [13]
 <strong>Output:</strong> [13]

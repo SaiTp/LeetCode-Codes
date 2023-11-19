@@ -1,17 +1,23 @@
 class Solution {
 public:
     int reductionOperations(vector<int>& nums) {
-        map<int,int,greater<int>>mp;
-        int ans=0;
-        for(auto i:nums)
-            mp[i]++;
-        int prev=0;
-        for(auto i:mp)
+        int cnt[50010];
+        memset(cnt, 0, sizeof cnt);
+        for(auto x : nums)
         {
-            i.second+=prev;
-            ans+=i.second;
-            prev=i.second;
+            cnt[x] ++;
         }
-        return ans-prev;
+        int res = 0;
+        
+        int c = 0;
+        for(int i = 1; i <= 50000; ++ i)
+        {
+            if(cnt[i])
+            {
+                res += c * cnt[i];
+                c ++;
+            }
+        }
+        return res;
     }
 };

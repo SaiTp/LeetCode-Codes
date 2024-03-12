@@ -21,19 +21,17 @@ public:
         for (; head; head = head -> next) {
             s += head -> val; 
             if (m.count(s)) {
-                removeAfter = m[s]; // e.g in [1, 2, 3, -3, 1] -> removeAfter is node1 and node2 gets removed from map's pref sum
+                removeAfter = m[s];
                 tmpSum = s;
                 // remove the nodes just before head
                 while (removeAfter && removeAfter != head) {
                     removeAfter = removeAfter -> next;
                     tmpSum += removeAfter -> val;
-                    if (removeAfter != head) m.erase(tmpSum); // ! head as it was never added to map
+                    if (removeAfter != head) m.erase(tmpSum); 
                 }
-				// e.g. in [1, 2, 3, -3, 1] next of node with value 2 should be node with value 1 now ( last node )
                 m[s] -> next = head -> next;
             }
             else {
-                // here prefix sum seen, hence add to map
                 m[s] = head;
             }
         }
